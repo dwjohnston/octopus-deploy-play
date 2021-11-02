@@ -33,5 +33,5 @@ jobs:
           yarn build
           yarn package
           ls
-          'curl -X POST https://blacksheepcode2.octopus.app/api/packages/raw -H "X-Octopus-ApiKey: $OCTOPUS_API_KEY" -F "data=@lambda.1.0.2.zip"'
+          'curl -X POST https://blacksheepcode2.octopus.app/api/packages/raw -H "X-Octopus-ApiKey: asdasd" -F "data=@lambda.1.0.2.zip"'
 
