@@ -27,5 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: 'curl -X POST https://blacksheepcode2.octopus.app/api/packages/raw -H "X-Octopus-ApiKey: $OCTOPUS_API_KEY" -F "data=@lambda.1.0.1.zip"'
+        run: |
+        yarn install
+        yarn build
+        yarn package
+        'curl -X POST https://blacksheepcode2.octopus.app/api/packages/raw -H "X-Octopus-ApiKey: $OCTOPUS_API_KEY" -F "data=@lambda.1.0.1.zip"'
 
