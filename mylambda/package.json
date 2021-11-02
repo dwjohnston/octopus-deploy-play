@@ -3,7 +3,7 @@
   "packageManager": "yarn@3.1.0",
   "scripts": {
     "build": "tsc", 
-    "package": "zip -j lambda.1.0.1.zip lib/*"
+    "package": "zip -j lambda.1.0.2.zip lib/*"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.85",
