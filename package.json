@@ -1,0 +1,4 @@
+{
+  "name": "octopus-deploy-play",
+  "packageManager": "yarn@3.1.0"
+}
